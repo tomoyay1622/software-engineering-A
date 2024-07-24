@@ -1,0 +1,10 @@
+LD R1, a
+LD R2, b
+ADD R2, R1, R2
+MUL R3, R1, R2
+SUB R1, R1, R2
+ST R2, b
+MUL R2, R1, R3
+ST R1, a 
+ST R2, d
+ST R3, c
