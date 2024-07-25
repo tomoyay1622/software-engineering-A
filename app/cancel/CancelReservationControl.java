@@ -14,7 +14,7 @@ public class CancelReservationControl {
         try {
             //Consume reservation
             ReservationManager reservationManager = getReservationManager();
-			Date stayingDate = reservationManager.consumeReservation(reservationNumber);
+			reservationManager.consumeReservation(reservationNumber);
 
         } catch (ReservationException e) {
             AppException exception = new AppException("Failed to cancel", e);

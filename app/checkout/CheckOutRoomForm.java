@@ -24,6 +24,7 @@ public class CheckOutRoomForm {
 		 * Your code for conducting check-out by using some Control object  
 		 */
 		getCheckOutRoomControl();
+		//
 	}
 
 	public String getRoomNumber() {

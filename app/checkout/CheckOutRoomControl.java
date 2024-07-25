@@ -32,6 +32,7 @@ public class CheckOutRoomControl {
 			 */
 			PaymentManager paymentManager = getPaymentManager();
 			paymentManager.consumePayment(date, roomNumber);
+			//
 		}
 		catch (RoomException e) {
 			AppException exception = new AppException("Failed to check-out", e);

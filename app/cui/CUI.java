@@ -38,6 +38,7 @@ public class CUI {
 				System.out.println("1: Reservation");
 				System.out.println("2: Check-in");
 				System.out.println("3: Check-out");
+				// cancelのための番号を追加
 				System.out.println("5: Cancel");
 				System.out.println("9: End");
 				System.out.print("> ");
@@ -64,6 +65,7 @@ public class CUI {
 					case 3:
 						checkOutRoom();
 						break;
+						//cancelのための番号追加
 					case 5:
 						cancelReserve();
 				}
@@ -78,7 +80,7 @@ public class CUI {
 			reader.close();
 		}
 	}
-
+	// キャンセルのためのメソッド追加
 	private void cancelReserve() throws IOException, AppException{
 		System.out.println("Input reservation number");
 		System.out.print("> ");
@@ -95,7 +97,8 @@ public class CUI {
 		cancelReservationForm.Cancel();
 		System.out.println("Reservation-cancel has completed now.");
 	}
-
+    //追加ここまで
+	
 	private void reserveRoom() throws IOException, AppException {
 		System.out.println("Input arrival date in the form of yyyy/mm/dd");
 		System.out.print("> ");
